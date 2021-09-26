@@ -18,9 +18,9 @@ const Cart = (props) => {
             <div className="cart-card l-bg-blue-dark">
                 <div className="card-statistic-3 p-5">
                     <div className="card-icon card-icon-large">{user}</div>
-                    <div className="mb-4">
-                        <h3 className="card-title mb-0">Writers You Choosed</h3>
-                        <h5>Total Salary: {salary}</h5>
+                    <div className="mb-0">
+                        <h3 className="card-title mb-3">Writers You Choosed</h3>
+                        <h5>Total Salary: ${salary}</h5>
                         {
                             props.cart.map(writer =>
                                 <CartItem name={writer.name} salary={writer.salary} key={writer.id}></CartItem>

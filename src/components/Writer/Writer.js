@@ -21,8 +21,8 @@ const Writer = (props) => {
                     </p>
                     <button onClick={() => { props.handleAddToCart(props.writer) }} className="btn btn-warning">{handShake} Hire Me</button>
                     <div className="d-flex justify-content-evenly mt-3">
-                        <p className="social-icon"><i class="fab fa-instagram"> </i></p>
-                        <p className="social-icon"><i class="fab fa-facebook-f"></i></p>
+                        <a href="./insta" className="social-icon text-white mb-0"><i class="fab fa-instagram"> </i></a>
+                        <a href="./fb" className="social-icon mb-0 text-white"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
             </div>

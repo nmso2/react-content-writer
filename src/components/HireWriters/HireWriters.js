@@ -20,7 +20,7 @@ const HireWriters = () => {
             setCart(newCart);
         }
         else {
-            
+            alert("Already Added this Content Writer!")
         }
     }
 

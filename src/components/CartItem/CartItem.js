@@ -6,7 +6,7 @@ const CartItem = (props) => {
     writers.push(props.name);
     return (
         <div>
-            <p>{writers.map(writer => writer)}</p>
+            <p className="mb-2">{writers.map(writer => writer)}</p>
         </div>
     );
 };
