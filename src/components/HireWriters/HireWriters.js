@@ -15,11 +15,11 @@ const HireWriters = () => {
 
     const handleAddToCart = (writer) => {
         let newCart = [...cart]
-        if (newCart.indexOf(writer)===-1) {
+        if (newCart.indexOf(writer) === -1) {
             newCart = [...cart, writer];
             setCart(newCart);
         }
-        else{
+        else {
             
         }
     }
