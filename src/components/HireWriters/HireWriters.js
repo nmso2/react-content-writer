@@ -11,8 +11,8 @@ const HireWriters = () => {
             .then(data => setWriters(data));
     }, []);
     return (
-        <div className="row mt-5">
-            <div className="col-8 p-5">
+        <div className="row mt-5 container-fluid">
+            <div className="col-8 p-5 mt-5">
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     {
                         writers.map(writer => <Writer writer={writer} key={writer.id}></Writer>)
@@ -20,7 +20,9 @@ const HireWriters = () => {
                 </div>
 
             </div>
-            <Cart></Cart>
+            <div className="col-4 mt-5 p-5">
+                <Cart></Cart>
+            </div>
         </div>
     );
 };
