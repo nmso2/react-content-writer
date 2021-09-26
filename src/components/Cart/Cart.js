@@ -16,10 +16,10 @@ const Cart = (props) => {
     return (
         <div className="mt-5">
             <div className="cart-card l-bg-blue-dark">
-                <div className="card-statistic-3 p-5">
+                <div className="card-statistic-3 p-3">
                     <div className="card-icon card-icon-large">{user}</div>
                     <div className="mb-0">
-                        <h3 className="card-title mb-3">Writers You Choosed</h3>
+                        <h3 className="card-title">Writers You Choosed</h3>
                         <h5>Total Salary: ${salary}</h5>
                         {
                             props.cart.map(writer =>
@@ -27,6 +27,7 @@ const Cart = (props) => {
 
                             )
                         }
+                        <button className="btn btn-warning px-5">Confirm</button>
                     </div>
                 </div>
             </div>
