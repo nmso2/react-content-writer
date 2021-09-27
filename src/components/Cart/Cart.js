@@ -8,7 +8,7 @@ import CartItem from '../CartItem/CartItem';
 const Cart = (props) => {
 
     const user = <FontAwesomeIcon icon={faUsers} />
-    console.log(props.cart);
+
 
     let salary = 0;
     props.cart.map(writer => salary = salary + writer.salary)
@@ -19,11 +19,11 @@ const Cart = (props) => {
                 <div className="card-statistic-3 p-3">
                     <div className="card-icon card-icon-large">{user}</div>
                     <div className="mb-0">
-                        <h3 className="card-title">Writers You Choosed</h3>
+                        <h3 className="card-title">You Choosed {props.cart.length} Writers</h3>
                         <h5>Total Salary: ${salary}</h5>
                         {
                             props.cart.map(writer =>
-                                <CartItem name={writer.name} salary={writer.salary} key={writer.id}></CartItem>
+                                <CartItem name={writer.name} key={writer.id}></CartItem>
 
                             )
                         }
